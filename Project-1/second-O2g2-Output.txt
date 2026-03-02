@@ -1,0 +1,56 @@
+agarberolio@blue:~/CS351/SSU-CS-351/Project-1$ make trials
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  alloca.cpp -o alloca.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  list.cpp -o list.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  malloc.cpp -o malloc.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  new.cpp -o new.out
+alloca.out (list length = 10000):
+0.00 real       0.00 user       0.00 sys        4032 memory (KB)
+0.00 real       0.00 user       0.00 sys        4036 memory (KB)
+0.00 real       0.00 user       0.00 sys        4056 memory (KB)
+0.00 real       0.00 user       0.00 sys        4036 memory (KB)
+0.00 real       0.00 user       0.00 sys        4040 memory (KB)
+0.00 real       0.00 user       0.00 sys        4056 memory (KB)
+0.00 real       0.00 user       0.00 sys        4032 memory (KB)
+0.00 real       0.00 user       0.00 sys        4092 memory (KB)
+0.00 real       0.00 user       0.00 sys        4052 memory (KB)
+0.00 real       0.00 user       0.00 sys        4056 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
+list.out (list length = 10000):
+0.01 real       0.00 user       0.00 sys        4616 memory (KB)
+0.00 real       0.00 user       0.00 sys        4620 memory (KB)
+0.01 real       0.00 user       0.00 sys        4624 memory (KB)
+0.01 real       0.00 user       0.00 sys        4608 memory (KB)
+0.00 real       0.00 user       0.00 sys        4616 memory (KB)
+0.00 real       0.00 user       0.00 sys        4620 memory (KB)
+0.00 real       0.00 user       0.00 sys        4620 memory (KB)
+0.01 real       0.00 user       0.00 sys        4628 memory (KB)
+0.00 real       0.00 user       0.00 sys        4632 memory (KB)
+0.00 real       0.00 user       0.00 sys        4612 memory (KB)
+ min: 0.000000  avg: 0.004000  max: 0.010000
+
+malloc.out (list length = 10000):
+0.00 real       0.00 user       0.00 sys        4056 memory (KB)
+0.00 real       0.00 user       0.00 sys        4036 memory (KB)
+0.00 real       0.00 user       0.00 sys        4044 memory (KB)
+0.00 real       0.00 user       0.00 sys        4040 memory (KB)
+0.00 real       0.00 user       0.00 sys        4056 memory (KB)
+0.00 real       0.00 user       0.00 sys        4092 memory (KB)
+0.00 real       0.00 user       0.00 sys        4040 memory (KB)
+0.00 real       0.00 user       0.00 sys        4040 memory (KB)
+0.00 real       0.00 user       0.00 sys        3500 memory (KB)
+0.00 real       0.00 user       0.00 sys        4040 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
+new.out (list length = 10000):
+0.00 real       0.00 user       0.00 sys        4612 memory (KB)
+0.01 real       0.00 user       0.00 sys        4668 memory (KB)
+0.00 real       0.00 user       0.00 sys        4632 memory (KB)
+0.00 real       0.00 user       0.00 sys        4620 memory (KB)
+0.01 real       0.00 user       0.00 sys        4616 memory (KB)
+0.01 real       0.00 user       0.00 sys        4620 memory (KB)
+0.00 real       0.00 user       0.00 sys        4632 memory (KB)
+0.00 real       0.00 user       0.00 sys        4628 memory (KB)
+0.01 real       0.00 user       0.00 sys        4632 memory (KB)
+0.01 real       0.00 user       0.00 sys        4620 memory (KB)
+ min: 0.000000  avg: 0.005000  max: 0.010000
