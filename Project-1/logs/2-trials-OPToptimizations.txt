@@ -1,0 +1,36 @@
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  alloca.cpp -o alloca.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  list.cpp -o list.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  malloc.cpp -o malloc.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  new.cpp -o new.out
+alloca.out (list length = 1000000):
+0.14 real	0.09 user	0.04 sys	93312 memory (KB)
+0.15 real	0.10 user	0.04 sys	93320 memory (KB)
+0.14 real	0.10 user	0.04 sys	93316 memory (KB)
+0.14 real	0.09 user	0.04 sys	93316 memory (KB)
+0.14 real	0.10 user	0.03 sys	93312 memory (KB)
+ min: 0.140000  avg: 0.142000  max: 0.150000
+
+list.out (list length = 1000000):
+0.21 real	0.16 user	0.04 sys	117508 memory (KB)
+0.21 real	0.17 user	0.03 sys	117508 memory (KB)
+0.20 real	0.15 user	0.04 sys	117516 memory (KB)
+0.21 real	0.16 user	0.04 sys	117504 memory (KB)
+0.21 real	0.16 user	0.04 sys	117564 memory (KB)
+ min: 0.200000  avg: 0.208000  max: 0.210000
+
+malloc.out (list length = 1000000):
+0.16 real	0.12 user	0.03 sys	93324 memory (KB)
+0.15 real	0.12 user	0.03 sys	93336 memory (KB)
+0.16 real	0.11 user	0.04 sys	93328 memory (KB)
+0.16 real	0.11 user	0.04 sys	93324 memory (KB)
+0.16 real	0.11 user	0.04 sys	93336 memory (KB)
+ min: 0.150000  avg: 0.158000  max: 0.160000
+
+new.out (list length = 1000000):
+0.20 real	0.15 user	0.05 sys	117508 memory (KB)
+0.20 real	0.15 user	0.05 sys	117508 memory (KB)
+0.20 real	0.15 user	0.05 sys	117564 memory (KB)
+0.19 real	0.15 user	0.03 sys	117564 memory (KB)
+0.20 real	0.16 user	0.04 sys	117508 memory (KB)
+ min: 0.190000  avg: 0.198000  max: 0.200000
+

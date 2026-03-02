@@ -1,0 +1,36 @@
+g++ -O3 -march=native -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  alloca.cpp -o alloca.out
+g++ -O3 -march=native -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  list.cpp -o list.out
+g++ -O3 -march=native -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  malloc.cpp -o malloc.out
+g++ -O3 -march=native -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  new.cpp -o new.out
+alloca.out (list length = 1000000):
+0.16 real	0.08 user	0.07 sys	139976 memory (KB)
+0.16 real	0.09 user	0.06 sys	140024 memory (KB)
+0.16 real	0.10 user	0.06 sys	140028 memory (KB)
+0.16 real	0.09 user	0.06 sys	139968 memory (KB)
+0.15 real	0.09 user	0.06 sys	139976 memory (KB)
+ min: 0.150000  avg: 0.158000  max: 0.160000
+
+list.out (list length = 1000000):
+0.20 real	0.15 user	0.04 sys	116968 memory (KB)
+0.20 real	0.15 user	0.05 sys	116956 memory (KB)
+0.19 real	0.13 user	0.05 sys	117508 memory (KB)
+0.20 real	0.15 user	0.04 sys	117508 memory (KB)
+0.20 real	0.14 user	0.05 sys	117512 memory (KB)
+ min: 0.190000  avg: 0.198000  max: 0.200000
+
+malloc.out (list length = 1000000):
+0.16 real	0.12 user	0.03 sys	93320 memory (KB)
+0.15 real	0.11 user	0.04 sys	93312 memory (KB)
+0.14 real	0.11 user	0.03 sys	93324 memory (KB)
+0.15 real	0.12 user	0.03 sys	93324 memory (KB)
+0.15 real	0.11 user	0.04 sys	93320 memory (KB)
+ min: 0.140000  avg: 0.150000  max: 0.160000
+
+new.out (list length = 1000000):
+0.19 real	0.14 user	0.05 sys	117520 memory (KB)
+0.20 real	0.16 user	0.04 sys	117516 memory (KB)
+0.19 real	0.14 user	0.04 sys	117504 memory (KB)
+0.20 real	0.14 user	0.05 sys	117512 memory (KB)
+0.20 real	0.15 user	0.04 sys	117508 memory (KB)
+ min: 0.190000  avg: 0.196000  max: 0.200000
+

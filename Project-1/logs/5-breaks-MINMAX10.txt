@@ -1,0 +1,4 @@
+alloca.out:        69
+list.out:          661
+malloc.out:        460
+new.out:           661

@@ -1,0 +1,8 @@
+g++ -O2 -g2 -DMIN_BYTES=64 -DMAX_BYTES=64  alloca.cpp -o alloca.out
+g++ -O2 -g2 -DMIN_BYTES=64 -DMAX_BYTES=64  list.cpp -o list.out
+g++ -O2 -g2 -DMIN_BYTES=64 -DMAX_BYTES=64  malloc.cpp -o malloc.out
+g++ -O2 -g2 -DMIN_BYTES=64 -DMAX_BYTES=64  new.cpp -o new.out
+alloca.out:        list length = 1000000  hash = 12691597048261913736
+list.out:          list length = 1000000  hash = 12691597048261913736
+malloc.out:        list length = 1000000  hash = 12691597048261913736
+new.out:           list length = 1000000  hash = 12691597048261913736

@@ -24,8 +24,8 @@ MIN_BYTES ?= 3
 MAX_BYTES ?= 100
 
 # Program execution and test values (used when running the programs)
-NUM_BLOCKS ?= 10000000
-NUM_TRIALS ?= 10
+NUM_BLOCKS ?= 100000
+NUM_TRIALS ?= 5
 
 #----------------------------------------------------------------------------
 #

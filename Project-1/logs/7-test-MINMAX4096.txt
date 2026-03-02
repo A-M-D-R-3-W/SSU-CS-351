@@ -1,0 +1,4 @@
+alloca.out:        list length = 1000000  hash = 5798887394725550661
+list.out:          list length = 1000000  hash = 5798887394725550661
+malloc.out:        list length = 1000000  hash = 5798887394725550661
+new.out:           list length = 1000000  hash = 5798887394725550661
