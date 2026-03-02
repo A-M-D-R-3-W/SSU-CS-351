@@ -11,7 +11,7 @@ Across all trials, `alloca.out` is often fastest but not always; it depends on n
 
 - `list.out` is usually the slowest. `new.out` is often close.
 
-Not always, but `list.out` is most often the slowest in these logs.
+Not always, but `list.out` is most often the slowest across all trials.
 
 ### 3. Was there a trend in program execution time based on the size of data in each Node? If so, what, and why?
 
