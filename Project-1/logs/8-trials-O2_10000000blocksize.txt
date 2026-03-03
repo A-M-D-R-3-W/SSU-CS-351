@@ -1,0 +1,32 @@
+alloca.out (list length = 10000000):
+1.62 real	0.98 user	0.63 sys	902628 memory (KB)
+1.65 real	0.98 user	0.65 sys	903176 memory (KB)
+1.59 real	0.98 user	0.60 sys	903180 memory (KB)
+1.58 real	0.94 user	0.63 sys	903176 memory (KB)
+1.58 real	0.96 user	0.61 sys	902600 memory (KB)
+ min: 1.580000  avg: 1.604000  max: 1.650000
+
+list.out (list length = 10000000):
+2.43 real	1.67 user	0.75 sys	1143360 memory (KB)
+2.47 real	1.65 user	0.81 sys	1143936 memory (KB)
+2.45 real	1.66 user	0.78 sys	1143936 memory (KB)
+2.46 real	1.69 user	0.75 sys	1143936 memory (KB)
+2.48 real	1.68 user	0.78 sys	1143360 memory (KB)
+ min: 2.430000  avg: 2.458000  max: 2.480000
+
+malloc.out (list length = 10000000):
+1.82 real	1.23 user	0.58 sys	902604 memory (KB)
+1.79 real	1.25 user	0.53 sys	903188 memory (KB)
+1.80 real	1.21 user	0.57 sys	903180 memory (KB)
+1.78 real	1.21 user	0.56 sys	903172 memory (KB)
+1.79 real	1.24 user	0.54 sys	903176 memory (KB)
+ min: 1.780000  avg: 1.796000  max: 1.820000
+
+new.out (list length = 10000000):
+2.32 real	1.56 user	0.74 sys	1143372 memory (KB)
+2.01 real	1.49 user	0.50 sys	1143992 memory (KB)
+2.35 real	1.56 user	0.77 sys	1143944 memory (KB)
+2.43 real	1.64 user	0.77 sys	1143360 memory (KB)
+2.28 real	1.55 user	0.71 sys	1143936 memory (KB)
+ min: 2.010000  avg: 2.278000  max: 2.430000
+

@@ -1,0 +1,36 @@
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  alloca.cpp -o alloca.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  list.cpp -o list.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  malloc.cpp -o malloc.out
+g++ -O2 -g2 -DMIN_BYTES=3 -DMAX_BYTES=100  new.cpp -o new.out
+alloca.out (list length = 1000):
+0.00 real	0.00 user	0.00 sys	3456 memory (KB)
+0.00 real	0.00 user	0.00 sys	3456 memory (KB)
+0.00 real	0.00 user	0.00 sys	3476 memory (KB)
+0.00 real	0.00 user	0.00 sys	3456 memory (KB)
+0.00 real	0.00 user	0.00 sys	3460 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
+list.out (list length = 1000):
+0.00 real	0.00 user	0.00 sys	3464 memory (KB)
+0.00 real	0.00 user	0.00 sys	2912 memory (KB)
+0.00 real	0.00 user	0.00 sys	3456 memory (KB)
+0.00 real	0.00 user	0.00 sys	3468 memory (KB)
+0.00 real	0.00 user	0.00 sys	3468 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
+malloc.out (list length = 1000):
+0.00 real	0.00 user	0.00 sys	3464 memory (KB)
+0.00 real	0.00 user	0.00 sys	3464 memory (KB)
+0.00 real	0.00 user	0.00 sys	2912 memory (KB)
+0.00 real	0.00 user	0.00 sys	3512 memory (KB)
+0.00 real	0.00 user	0.00 sys	3464 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
+new.out (list length = 1000):
+0.00 real	0.00 user	0.00 sys	3460 memory (KB)
+0.00 real	0.00 user	0.00 sys	3480 memory (KB)
+0.00 real	0.00 user	0.00 sys	3476 memory (KB)
+0.00 real	0.00 user	0.00 sys	3460 memory (KB)
+0.00 real	0.00 user	0.00 sys	3464 memory (KB)
+ min: 0.000000  avg: 0.000000  max: 0.000000
+
