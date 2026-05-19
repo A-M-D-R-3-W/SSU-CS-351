@@ -1,17 +1,17 @@
 # Table of Contents
 
-[start.html](start.html)
+[(0) start.html](0-start.html) - The starter WebGL page used as the base for the project.
 
-[start-commented.html](start-commented.html)
+[(0) start-commented.html](0-start-commented.html) - A commented version of the starter WebGL program.
 
-[start-10-sided-solid-disk.html](start-10-sided-solid-disk.html)
+[(1) start-triangle.html](1-start-triangle.html) - Renders the wireframe triangle stage of the project.
 
-[start-triangle.html](start-triangle.html)
+[(2) start-10-sided-solid-disk.html](2-start-10-sided-solid-disk.html) - Renders a 10-sided solid disk using a triangle fan.
 
-[start-star.html](start-star.html)
+[(3) start-star.html](3-start-star.html) - Renders a five-pointed star using alternating vertex radii.
 
-[start-star-animated.html](start-star-animated.html)
+[(4) start-star-animated.html](4-start-star-animated.html) - Animates the star by rotating it over time.
 
-[start-star-extra-credit.html](start-star-extra-credit.html)
+[(5) start-star-extra-credit.html](5-start-star-extra-credit.html) - Adds interpolated color to the animated star using the vertex radius.
 
 [initShaders.js](initShaders.js)
