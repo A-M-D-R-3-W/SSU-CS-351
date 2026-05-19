@@ -14,6 +14,14 @@ const Count NumCheckValues = 500;
 //
 // --- Add your CUDA kernel implementation of iota here
 //
+__global__
+void iota(Count n, DataType* values, const DataType startValue) {
+    Count i = blockIdx.x * blockDim.x + threadIdx.x;
+
+    if (i < n) {
+        values[i] = static_cast<DataType>(i) + startValue;
+    }
+}
 
 int main(int argc, char* argv[]) {
     Count numValues = argc > 1 ? std::stol(argv[1]) : TestSize;
