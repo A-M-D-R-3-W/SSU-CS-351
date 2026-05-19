@@ -12,4 +12,6 @@
 
 [start-star-animated.html](start-star-animated.html)
 
+[start-star-extra-credit.html](start-star-extra-credit.html)
+
 [initShaders.js](initShaders.js)
