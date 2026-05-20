@@ -9,7 +9,7 @@ OPT ?= -O2
 CXXFLAGS = $(OPT) $(STD)
 
 NVCC = nvcc
-DIRT = $(wildcard *.i *.ppm *.cpu *.gpu)
+DIRT = $(wildcard *.i *.cpu *.gpu)
 
 default all: cpu gpu
 

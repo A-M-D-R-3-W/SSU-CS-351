@@ -60,24 +60,24 @@ struct Color {
 __device__
 Color setColor(int iterations) {
     constexpr size_t NumColors = 16;
-    const Color colors[NumColors] = {
-        Color(66, 30, 15),
-        Color(25, 7, 26),
-        Color(9, 1, 47),
-        Color(4, 4, 73),
-        Color(0, 7, 100),
-        Color(12, 44, 138),
-        Color(24, 82, 177),
-        Color(57, 125, 209),
-        Color(134, 181, 229),
-        Color(211, 236, 248),
-        Color(241, 233, 191),
-        Color(248, 201, 95),
-        Color(255, 170, 0),
-        Color(204, 128, 0),
-        Color(153, 87, 0),
-        Color(106, 52, 3)
-    };
+const Color colors[NumColors] = {
+    Color(255, 179, 186),  // pastel pink
+    Color(255, 223, 186),  // pastel peach
+    Color(255, 255, 186),  // pastel yellow
+    Color(186, 255, 201),  // pastel green
+    Color(186, 225, 255),  // pastel blue
+    Color(218, 186, 255),  // pastel purple
+    Color(255, 204, 229),  // pastel rose
+    Color(204, 255, 229),  // pastel mint
+    Color(204, 229, 255),  // pastel sky
+    Color(229, 204, 255),  // pastel lavender
+    Color(255, 229, 204),  // pastel cream
+    Color(204, 255, 255),  // pastel cyan
+    Color(255, 204, 204),  // pastel coral
+    Color(204, 255, 204),  // pastel lime
+    Color(204, 204, 255),  // pastel periwinkle
+    Color(255, 255, 204)   // pastel ivory
+};
 
     const Color black;
 
@@ -180,7 +180,25 @@ void julia(Complex d, Complex center, Color* pixels) {
     //   means you choose your variable names well (just like Phil mentions)
     //   you can pretty much drop in the CPU code, and then do the extra
     //   CUDA bits
-};
+    auto y = blockIdx.y * blockDim.y + threadIdx.y;
+    auto x = blockIdx.x * blockDim.x + threadIdx.x;
+
+    Complex c(x * d.x, y * d.y);
+    c -= center;
+
+    Complex z;
+
+    int iter = 0;
+    while (iter < MaxIterations && magnitude(z) < 2.0) {
+        z = z * z + c;
+        ++iter;
+    }
+
+    pixels[x + y * Width] = setColor(iter);
+}
+
+
+
 
 //----------------------------------------------------------------------------
 //

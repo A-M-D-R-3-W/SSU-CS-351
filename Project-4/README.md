@@ -1,5 +1,5 @@
 
-
+Part 1
 
 Question: Are the results what you expected? Speculate as to why it looks like CUDA isn’t a great solution for this problem.
 
@@ -34,3 +34,8 @@ CPU OUTPUT
 |500000000| 2.81| 0.42| 2.38|
 |1000000000| 5.84| 0.97| 4.86|
 |5000000000|34.92| 6.09|28.80|
+
+
+
+Part 2:
+
